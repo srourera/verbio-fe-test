@@ -1,0 +1,7 @@
+<div class="message" v-bind:class="{ bot: message.isBot, user: message.isUser }">
+    <div class="container">
+        <p v-if="!message.isImg">{{ message.content }}</p>
+        <img v-if="message.isImg" v-bind:src="message.content" />
+        <span class="when">{{ message.when }}</span>
+    </div>
+</div>

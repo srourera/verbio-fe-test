@@ -1,0 +1,29 @@
+.messages {
+    overflow: auto;
+    max-height: calc(100vh - 80px - 60px);
+}
+
+.input {
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 2px -5px 3px white;
+}
+
+.input input {
+    height: 50px;
+    width: 85%;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #ff1654;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.input input:focus {
+    outline: none;
+}

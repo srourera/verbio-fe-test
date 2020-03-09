@@ -1,0 +1,18 @@
+<div class="login">
+    <div id="nav">
+        <img alt="Vue logo" src="../../assets/logo.png" />
+    </div>
+    <b-card class="login-card mt-3" header="Login into Verbio Chat">
+        <b-form @submit="onSubmit">
+            <b-form-group id="login-input-group">
+                <b-form-input id="username-input" v-model="form.username" type="text" v-bind:class="{ error: error.username.required || error.credentials }" placeholder="Enter username" @input="resetErrors()"></b-form-input>
+                <p id="username-validator" class="error-validator" v-if="error.username.required">This field is required.</p>
+                <b-form-input id="password-input" v-model="form.password" type="password" v-bind:class="{ error: error.password.required || error.credentials }" placeholder="Enter password"></b-form-input>
+                <p id="password-validator" class="error-validator" v-if="error.password.required">This field is required.</p>
+            </b-form-group>
+            <p id="form-validator" class="error-validator" v-if="error.credentials">Incorrect username or password.</p>
+
+            <b-button type="submit" variant="primary">Submit</b-button>
+        </b-form>
+    </b-card>
+</div>

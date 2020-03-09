@@ -1,0 +1,10 @@
+.container {
+    min-width: min(82px, 20%);
+    max-height: 49px;
+}
+
+p {
+    margin-right: 0;
+    font-size: 70px;
+    line-height: 25px;
+}

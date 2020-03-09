@@ -1,0 +1,13 @@
+<div class="chat">
+    <div id="nav">
+        <div class="logout" @click="logout()">Logout</div>
+        <img alt="Vue logo" src="../../assets/logo.png" />
+    </div>
+    <div id="messages" class="messages">
+        <Message v-for="message in messages" v-bind:message="message" />
+        <WaitingMessage v-if="isWaiting" />
+    </div>
+    <div class="input">
+        <input id="input" type="text" v-model="input" @keypress="newMessage($event)" />
+    </div>
+</div>

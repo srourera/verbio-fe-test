@@ -1,0 +1,37 @@
+.login-card {
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    /* border-color: #ff1654; */
+}
+
+.login-card .card-header {
+    /* border-bottom: 1px solid #ff1654; */
+    font-weight: bold;
+}
+
+input {
+    margin-top: 25px;
+    border-color: #ced4da !important;
+}
+
+input.error {
+    border: 1px solid red !important;
+    color: red;
+}
+
+.error-validator {
+    color: red;
+}
+
+button {
+    background-color: #ff1654;
+    border-color: #ff1654;
+    font-weight: bold;
+}
+
+button:hover,
+button:active {
+    background-color: #ff165488;
+    border-color: #ff1654;
+}
